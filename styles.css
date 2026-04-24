@@ -135,7 +135,7 @@ p {
 
 .paper {
   display: grid;
-  grid-template-columns: 60px 168px minmax(0, 1fr);
+  grid-template-columns: 60px 230px minmax(0, 1fr);
   gap: 22px;
   align-items: start;
 }
@@ -173,8 +173,7 @@ strong {
 .paper-thumb img {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  height: auto;
 }
 
 .paper-links {
@@ -250,7 +249,7 @@ strong {
   }
 
   .paper-thumb {
-    width: min(100%, 260px);
+    width: min(100%, 320px);
   }
 
   .education-item {
