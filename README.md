@@ -44,8 +44,14 @@ In GitHub, open the repository and go to:
 Settings -> Pages -> Build and deployment
 ```
 
-Set **Source** to **GitHub Actions**. The workflow in
-`.github/workflows/pages.yml` will deploy the static site whenever you push to
+Set **Source** to **Deploy from a branch**, then choose:
+
+```text
+Branch: main
+Folder: / (root)
+```
+
+GitHub Pages will publish the root `index.html` file whenever you push to
 `main`.
 
 The site will be available at:
