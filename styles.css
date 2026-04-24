@@ -1,12 +1,13 @@
 :root {
   color-scheme: light;
   --bg: #ffffff;
-  --text: #1f1f1f;
-  --muted: #666666;
-  --rule: #dddddd;
-  --accent: #0645ad;
-  --accent-soft: #f3f5f7;
-  --max-width: 860px;
+  --text: #111827;
+  --muted: #5f6b7a;
+  --rule: #e5e7eb;
+  --accent: #1d4ed8;
+  --accent-hover: #1e3a8a;
+  --accent-soft: #f6f8fb;
+  --max-width: 920px;
 }
 
 * {
@@ -21,9 +22,9 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 17px;
-  line-height: 1.58;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
 }
 
 a {
@@ -33,21 +34,21 @@ a {
 }
 
 a:hover {
-  color: #0b2f70;
+  color: var(--accent-hover);
 }
 
 .page {
-  width: min(var(--max-width), calc(100% - 36px));
+  width: min(var(--max-width), calc(100% - 40px));
   margin: 0 auto;
-  padding: 54px 0 34px;
+  padding: 56px 0 36px;
 }
 
 .intro {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 188px;
-  gap: 42px;
+  grid-template-columns: minmax(0, 1fr) 176px;
+  gap: 44px;
   align-items: start;
-  padding-bottom: 36px;
+  padding-bottom: 40px;
   border-bottom: 1px solid var(--rule);
 }
 
@@ -59,24 +60,24 @@ p {
 }
 
 h1 {
-  margin-bottom: 4px;
-  font-size: 38px;
+  margin-bottom: 6px;
+  font-size: 42px;
   line-height: 1.1;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0;
 }
 
 h2 {
-  margin-bottom: 18px;
-  font-size: 23px;
+  margin-bottom: 20px;
+  font-size: 22px;
   line-height: 1.2;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 h3 {
-  margin-bottom: 5px;
-  font-size: 18px;
-  line-height: 1.25;
+  margin-bottom: 6px;
+  font-size: 17px;
+  line-height: 1.35;
   font-weight: 600;
 }
 
@@ -85,22 +86,22 @@ p {
 }
 
 .subtitle {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   color: var(--muted);
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .links {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 16px;
+  gap: 8px 18px;
   margin-top: 20px;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
+  font-weight: 500;
 }
 
 .portrait {
-  width: 188px;
+  width: 176px;
   aspect-ratio: 1;
 }
 
@@ -109,13 +110,13 @@ p {
   width: 100%;
   height: 100%;
   border: 1px solid var(--rule);
-  border-radius: 4px;
+  border-radius: 6px;
   object-fit: cover;
   background: var(--accent-soft);
 }
 
 .section {
-  padding: 34px 0 28px;
+  padding: 38px 0 32px;
   border-bottom: 1px solid var(--rule);
 }
 
@@ -125,33 +126,26 @@ p {
 
 .paper-list {
   display: grid;
-  gap: 24px;
+  gap: 26px;
 }
 
 .paper {
   display: grid;
-  grid-template-columns: 58px minmax(0, 1fr);
-  gap: 20px;
+  grid-template-columns: 60px minmax(0, 1fr);
+  gap: 22px;
 }
 
 .paper-year {
   color: var(--muted);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 500;
   line-height: 1.4;
-  padding-top: 3px;
+  padding-top: 2px;
 }
 
 .authors,
-.metrics,
 .muted {
   color: var(--muted);
-}
-
-.metrics {
-  margin: -8px 0 24px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
 }
 
 .paper-links {
@@ -160,17 +154,33 @@ p {
   gap: 12px;
   margin-bottom: 0;
   color: var(--muted);
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
+  font-weight: 500;
 }
 
 .education-item {
-  display: grid;
-  grid-template-columns: minmax(220px, 0.55fr) minmax(0, 1fr);
-  gap: 32px;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
 }
 
-.education-item p:last-child,
+.school-logo {
+  width: 58px;
+  height: 58px;
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
+.education-copy p {
+  margin-bottom: 4px;
+}
+
+.honors {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.education-copy p:last-child,
 .footer p {
   margin-bottom: 0;
 }
@@ -178,7 +188,6 @@ p {
 .footer {
   padding-top: 24px;
   color: var(--muted);
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
 }
 
@@ -199,16 +208,24 @@ p {
 
   .portrait {
     order: -1;
-    width: 132px;
+    width: 136px;
   }
 
   h1 {
-    font-size: 33px;
+    font-size: 34px;
   }
 
-  .paper,
-  .education-item {
+  .paper {
     grid-template-columns: 1fr;
     gap: 8px;
+  }
+
+  .education-item {
+    gap: 14px;
+  }
+
+  .school-logo {
+    width: 48px;
+    height: 48px;
   }
 }

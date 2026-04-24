@@ -7,8 +7,8 @@ Minimal one-page academic website for a current undergraduate AI researcher.
 Update these details in `index.html` as they change:
 
 - Research vision wording.
-- Publication titles, venues, links, and metrics.
-- Education details and coursework.
+- Publication titles, venues, and paper links.
+- Education details, GPA, and honors.
 - Profile links and CV file.
 
 ## GitHub Pages Deployment
