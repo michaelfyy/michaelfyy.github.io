@@ -1,0 +1,22 @@
+{
+  "name": "Yuanyi (Michael) Feng",
+  "short_name": "Yuanyi Feng",
+  "description": "Personal academic website for Yuanyi (Michael) Feng, a computer science undergraduate at UIUC researching embodied AI, multimodal intelligence, world models, and energy-based learning.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/assets/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

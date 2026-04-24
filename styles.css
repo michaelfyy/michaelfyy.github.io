@@ -47,7 +47,7 @@ a:hover {
 
 .intro {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 176px;
+  grid-template-columns: minmax(0, 1fr) 232px;
   gap: 44px;
   align-items: start;
   padding-bottom: 40px;
@@ -87,12 +87,6 @@ p {
   margin-bottom: 13px;
 }
 
-.subtitle {
-  margin-bottom: 20px;
-  color: var(--muted);
-  font-size: 17px;
-}
-
 .links {
   display: flex;
   flex-wrap: wrap;
@@ -111,7 +105,7 @@ p {
 }
 
 .portrait {
-  width: 176px;
+  width: 232px;
   aspect-ratio: 1;
 }
 
@@ -243,7 +237,7 @@ strong {
 
   .portrait {
     order: -1;
-    width: 136px;
+    width: 164px;
   }
 
   h1 {
