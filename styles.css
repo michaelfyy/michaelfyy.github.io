@@ -4,10 +4,10 @@
   --text: #111827;
   --muted: #5f6b7a;
   --rule: #e5e7eb;
-  --accent: #1d4ed8;
-  --accent-hover: #1e3a8a;
+  --accent: #0000cd;
+  --accent-hover: #0000cd;
   --accent-soft: #f6f8fb;
-  --max-width: 920px;
+  --max-width: 960px;
 }
 
 * {
@@ -25,16 +25,18 @@ body {
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 16px;
   line-height: 1.65;
+  font-weight: 300;
 }
 
 a {
   color: var(--accent);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
+  text-decoration: none;
 }
 
 a:hover {
   color: var(--accent-hover);
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
 }
 
 .page {
@@ -63,7 +65,7 @@ h1 {
   margin-bottom: 6px;
   font-size: 42px;
   line-height: 1.1;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0;
 }
 
@@ -71,14 +73,14 @@ h2 {
   margin-bottom: 20px;
   font-size: 22px;
   line-height: 1.2;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h3 {
   margin-bottom: 6px;
   font-size: 17px;
   line-height: 1.35;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 p {
@@ -94,10 +96,18 @@ p {
 .links {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 18px;
+  gap: 0;
   margin-top: 20px;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.links a:not(:last-child)::after {
+  content: "/";
+  color: var(--text);
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
 }
 
 .portrait {
@@ -121,24 +131,25 @@ p {
 }
 
 .research-vision {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .paper-list {
   display: grid;
-  gap: 26px;
+  gap: 30px;
 }
 
 .paper {
   display: grid;
-  grid-template-columns: 60px minmax(0, 1fr);
+  grid-template-columns: 60px 168px minmax(0, 1fr);
   gap: 22px;
+  align-items: start;
 }
 
 .paper-year {
   color: var(--muted);
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.4;
   padding-top: 2px;
 }
@@ -148,6 +159,30 @@ p {
   color: var(--muted);
 }
 
+strong {
+  font-weight: 600;
+}
+
+.paper-thumb {
+  display: block;
+  border: 1px solid var(--rule);
+  border-radius: 5px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 0 4px rgba(15, 23, 42, 0.12);
+}
+
+.paper-thumb:hover {
+  text-decoration: none;
+}
+
+.paper-thumb img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
 .paper-links {
   display: flex;
   flex-wrap: wrap;
@@ -155,7 +190,7 @@ p {
   margin-bottom: 0;
   color: var(--muted);
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .education-item {
@@ -177,7 +212,7 @@ p {
 
 .honors {
   color: var(--text);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .education-copy p:last-child,
@@ -217,7 +252,11 @@ p {
 
   .paper {
     grid-template-columns: 1fr;
-    gap: 8px;
+    gap: 10px;
+  }
+
+  .paper-thumb {
+    width: min(100%, 260px);
   }
 
   .education-item {
