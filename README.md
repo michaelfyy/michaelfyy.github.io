@@ -2,16 +2,14 @@
 
 Minimal one-page academic website for a current undergraduate AI researcher.
 
-## Edit Before Publishing
+## Edit
 
-Update these placeholders in `index.html`:
+Update these details in `index.html` as they change:
 
-- `Michael` / page title, if you want your full name displayed.
-- University, major, graduation year, and coursework.
 - Research vision wording.
-- Paper/project titles, collaborators, and links.
-- Google Scholar and CV links.
-- Replace `assets/profile-placeholder.svg` with a headshot if you have one.
+- Publication titles, venues, links, and metrics.
+- Education details and coursework.
+- Profile links and CV file.
 
 ## GitHub Pages Deployment
 
