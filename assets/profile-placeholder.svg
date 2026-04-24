@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="title desc">
+  <title id="title">Profile placeholder</title>
+  <desc id="desc">A minimal abstract profile placeholder for an academic website.</desc>
+  <rect width="400" height="400" fill="#edf4f0"/>
+  <circle cx="200" cy="150" r="64" fill="#2f6653" opacity="0.9"/>
+  <path d="M92 332c18-74 63-112 108-112s90 38 108 112" fill="#2f6653" opacity="0.9"/>
+  <path d="M70 76h260" stroke="#202020" stroke-width="4" opacity="0.12"/>
+  <path d="M70 354h260" stroke="#202020" stroke-width="4" opacity="0.12"/>
+</svg>
